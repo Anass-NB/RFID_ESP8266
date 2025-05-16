@@ -1,0 +1,231 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,0.9);
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Cards */
+.card {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: none;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+/* Scan Card Page */
+#current-time {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+#current-date {
+    font-size: 1.2rem;
+}
+
+.scanning-indicator {
+    color: #666;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+/* Success Animation */
+.success-animation {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.success-animation i.fa-check {
+    color: #28a745;
+    font-size: 64px;
+    line-height: 1;
+    margin-bottom: 10px;
+    display: inline-block;
+    animation: bounce 1s;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Status Badge */
+.status-badge {
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-placeholder {
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Dashboard */
+.stat-card {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.present-card {
+    background-color: #28a745;
+}
+
+.absent-card {
+    background-color: #dc3545;
+}
+
+.late-card {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.hours-card {
+    background-color: #17a2b8;
+}
+
+/* Employee List */
+.employee-table img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.status-in {
+    background-color: #28a745;
+}
+
+.status-out {
+    background-color: #dc3545;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+/* Reports Page */
+.report-filters {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    #current-time {
+        font-size: 2rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+}
