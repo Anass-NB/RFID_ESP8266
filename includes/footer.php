@@ -1,48 +1,22 @@
         </main>
         
         <!-- Footer -->
-        <footer class="app-footer mt-5 py-3 text-center">
+        <footer class="app-footer mt-5 py-3">
             <div class="container">
-                <p class="mb-0 text-muted">
-                    &copy; <?php echo date('Y'); ?> <?php echo htmlspecialchars($companyName ?? 'Employee Time Tracking System'); ?>
-                    <span class="mx-2">|</span>
-                    <a href="#" class="text-muted text-decoration-none">Privacy Policy</a>
-                    <span class="mx-2">|</span>
-                    <a href="#" class="text-muted text-decoration-none">Terms of Service</a>
-                </p>
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                    <div class="mb-3 mb-md-0">
+                        <p class="mb-0">
+                            &copy; <?php echo date('Y'); ?> <?php echo htmlspecialchars($companyName ?? 'Employee Time Tracking System'); ?>
+                        </p>
+                        <p class="mb-0 small text-muted">Secure attendance tracking with RFID technology</p>
+                    </div>
+                    <div>
+                        <a href="#" class="text-decoration-none me-3"><i class="fas fa-shield-alt me-1"></i>Privacy Policy</a>
+                        <a href="#" class="text-decoration-none"><i class="fas fa-file-contract me-1"></i>Terms of Service</a>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
-    
-    <!-- Custom Scripts -->
-    <script src="js/time-tracking.js"></script>
-    <script>
-        // Initialize any custom scripts
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add smooth scrolling to page
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-            
-            // Add hover effect to cards
-            document.querySelectorAll('.app-card').forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-5px)';
-                });
-                card.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                });
-            });
-        });
-    </script>
 </body>
 </html>
